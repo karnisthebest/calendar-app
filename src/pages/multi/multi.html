@@ -7,13 +7,18 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>multi</ion-title>
+    <ion-title>Select</ion-title>
+    
+    <ion-buttons end>
+      <button ion-button (click)="Done()">Done</button>
+    </ion-buttons>
+    
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
   <ion-calendar [(ngModel)]="dateMulti"
   [options]="optionsMulti"
   [type]="type"

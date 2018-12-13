@@ -7,44 +7,46 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title >create</ion-title>
+    <ion-title>Create Plan</ion-title>
+
+    <ion-buttons end>
+        <button ion-button (click)="planDone()">Done</button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-  <ion-list>
-      <ion-item no-margin>        
-          <ion-label> 
-            <ion-icon name="reorder"></ion-icon> 
-          </ion-label>
-          <ion-input clearInput type="text" placeholder="Title"></ion-input>
-          
-        </ion-item>
-        
-        <button (click)="goCalendar()" ion-item>
-          <ion-icon name="ios-calendar-outline" item-start></ion-icon>
-          Select Dates
-        </button>
-        <ion-item-divider style="background-color:#f7f7f7">
-          Optional
-          
-        </ion-item-divider>
-        <ion-item no-margin>        
-            <ion-label> 
-              <ion-icon name="ios-pin-outline"></ion-icon> 
-            </ion-label>
-            <ion-input clearInput type="text" placeholder="Location"></ion-input>
-            
-          </ion-item>
-          <ion-item>
-              <ion-label> 
-                  <ion-icon name="ios-list-outline"></ion-icon> 
-                </ion-label>
-              <ion-textarea placeholder="Enter a description"></ion-textarea>
-          </ion-item>
-        
-  </ion-list>
+<ion-content>
   
+    <ion-list>
+      <ion-item no-margin>
+        <ion-label>
+          <ion-icon name="reorder"></ion-icon>
+        </ion-label>
+        <ion-input clearInput type="text" placeholder="Title"></ion-input>
+      </ion-item>
+      <button (click)="goCalendar()" ion-item>
+        <ion-icon name="ios-calendar-outline" item-start></ion-icon>
+        Select Dates
+      </button>
+    
+      <ion-item-divider style="background-color:#f7f7f7">
+        Optional
+      </ion-item-divider>
+      <ion-item no-margin>
+        <ion-label>
+          <ion-icon name="ios-pin-outline"></ion-icon>
+        </ion-label>
+        <ion-input clearInput type="text" placeholder="Location"></ion-input>
+
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <ion-icon name="ios-list-outline"></ion-icon>
+        </ion-label>
+        <ion-textarea placeholder="Enter a description"></ion-textarea>
+      </ion-item>
+    </ion-list>
+
 </ion-content>

@@ -1,14 +1,16 @@
 page-create {
 
-    ion-item-divider{
-        // $item-ios-divider-background:#f7f7f7;
-        // $item-md-divider-background: red !important;
-        // $item-md-divider-color: red !important;
-    }
+ion-item-divider[style]{
+    //$item-ios-divider-background:#f7f7f7;
+    //$item-md-divider-background: red !important;
+    //$item-md-divider-color: red !important;
+    font-size: 20px;
+    font-weight: bold;
+}
     
    
-    .content-md {
-        background-color: #f7f7f7 !important;
+.content-md {
+    background-color: #f7f7f7 !important;
 }
 
 .content-ios{
@@ -37,8 +39,7 @@ ion-content.content-ios[padding] .scroll-content {
 
 .item-inner ion-label {
     white-space: normal;
-  }
-
+}
   
 
 }
