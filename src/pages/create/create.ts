@@ -49,12 +49,8 @@ export class CreatePage {
     })
   }
 
-  // ionViewDidLoad() {
-  //   console.log('ionViewDidLoad CreatePage');
-  // }
-
-  // goCalendar() {
-  //   this.navCtrl.push("MultiPage");
-  // }
+  planDone(){
+    
+  }
   
 }
