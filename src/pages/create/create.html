@@ -24,9 +24,9 @@
         <ion-label>
           <ion-icon name="reorder"></ion-icon>
         </ion-label>
-        <ion-input clearInput type="text" placeholder="Title"></ion-input>
+        <ion-input [(ngModel)]="txtTitle" type="text" placeholder="Title" clearInput></ion-input>
       </ion-item>
-      <button (click)="goCalendar()" ion-item>
+      <button (click)="openCalendar()" ion-item>
         <ion-icon name="ios-calendar-outline" item-start></ion-icon>
         Select Dates
       </button>
@@ -38,15 +38,22 @@
         <ion-label>
           <ion-icon name="ios-pin-outline"></ion-icon>
         </ion-label>
-        <ion-input clearInput type="text" placeholder="Location"></ion-input>
+        <ion-input [(ngModel)]="txtLocation" type="text" placeholder="Location" clearInput></ion-input>
 
       </ion-item>
       <ion-item>
         <ion-label>
           <ion-icon name="ios-list-outline"></ion-icon>
         </ion-label>
-        <ion-textarea placeholder="Enter a description"></ion-textarea>
+        <ion-textarea [(ngModel)]="txtDescription" placeholder="Enter a description" rows="1"></ion-textarea>
       </ion-item>
     </ion-list>
-
+    <h5>Title Test</h5>
+    {{txtTitle}}
+    <h5>Location Test</h5>
+    {{txtLocation}}
+    <h5>Description Test</h5>
+    {{txtDescription}}
+    <h5>Dates</h5>
+    {{dates}}
 </ion-content>

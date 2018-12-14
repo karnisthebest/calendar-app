@@ -1,19 +1,11 @@
 <!--
-  Generated template for the LoginPage page.
+  Generated template for the RegisterPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<!-- <ion-header>
 
-  <ion-navbar>
-    <ion-title>Login</ion-title>
-  </ion-navbar>
-
-</ion-header> -->
-
-
-<ion-content padding center text-center>
+<ion-content padding>
   <ion-title>
     <ion-img style="width: 200px; height: 200px; background: transparent !important;" src="../assets/imgs/Vote.png"></ion-img>
   </ion-title>
@@ -25,9 +17,10 @@
     <ion-item>
       <ion-input placeholder="Password" [(ngModel)]="password" type="password"></ion-input>
     </ion-item>
+    <ion-item>
+      <ion-input placeholder="Re-Password" [(ngModel)]="repassword" type="password"></ion-input>
+    </ion-item>
   </ion-list>
-  <button ion-button full (click)="goLogin()">Login</button>
-  <button ion-button block outline (click)="goRegister()">Register</button>
-  <button ion-button full>Login with Facebook</button>
 
+  <button ion-button full (click)="Register()">Register</button>
 </ion-content>

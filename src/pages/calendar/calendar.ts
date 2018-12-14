@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { CalendarComponentOptions } from 'ion2-calendar';
 
 /**
  * Generated class for the CalendarPage page.
@@ -15,9 +16,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CalendarPage {
 
-  date: string;
-  type: 'string';
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  date: string[] = ['2018-01-01', '2018-01-02', '2018-01-05'];
+  options: CalendarComponentOptions = {
+    from: new Date(2000, 0, 1),
+    pickMode: 'multi'
+  };
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public modalCtrl: ModalController
+    ) {
   }
 
   ionViewDidLoad() {
@@ -27,5 +35,7 @@ export class CalendarPage {
   onChange($event) {
     console.log($event);
   }
+
+  
 
 }
